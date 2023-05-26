@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,700;1,400;1,800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+  font-family: "Poppins", sans-serif;
+}
+input[type="text"] {
+  font-size: 32px;
+  width: 9rem;
+  outline: none;
+  
+}
+input[type="text"]:focus{
+  border-color: hsl(259, 100%, 65%);
+  opacity: 0.8;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(0, 0%, 94%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.age-calculate-wrapper {
+  background-color: hsl(0, 0%, 100%);
+  width: 48rem;
+  padding: 3.5rem;
+  border-radius: 1.5rem;
+  border-bottom-right-radius: 30%;
+}
+.age-submit-form .inputs {
+  display: flex;
+  gap: 30px;
+}
+.inputs label {
+  text-transform: uppercase;
+  font-weight: 800;
+}
+.inputs span {
+  color: hsl(0, 100%, 67%
+  );
+  font-size: 12px;
+  font-weight: 400i;
+}
+.age-submit-form .button-div {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.button-div::after {
+  content: "";
+  width: 580px;
+  border: 1px solid hsl(0, 0%, 86%);
+  position: absolute;
+  top: 50%;
+  left: -6px;
+}
+.button-div button {
+  height: 85px;
+  width: 80px;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(259, 100%, 65%);
+  transition: 0.3s ease all;
+}
+.button-div button:active {
+  background-color: hsl(0, 0%, 8%);
+}
+
+.age-result-wrapper .age-result-list {
+  font-size: 4rem;
+}
+.age-result-list span {
+  color: hsl(259, 100%, 65%);
+}
+
+@media screen and (max-width: 800px) {
+  
+  input[type="text"] {
+    font-size: 32px;
+    width: 8rem;}
+
+    .age-calculate-wrapper {
+      
+      width: 35rem;
+      padding: 2.5rem;
+    }
+    .button-div {
+      margin-top: 1rem;
+    }
+    .button-div::after {
+      content: "";
+      width: 372px;}
+
+.age-result-wrapper .age-result-list {
+  font-size: 3.5rem;
+}
+}
+
+@media screen and (max-width: 600px) {
+  
+  input[type="text"] {
+    font-size: 24px;
+    width: 4.8rem;}
+
+    .age-calculate-wrapper {
+      
+      width: 21rem;
+      padding: 1.5rem;
+    }
+    .age-submit-form .button-div {
+      justify-content: center;
+    }
+    .button-div {
+      margin-top: 1rem;
+    }
+
+    .button-div::after {
+      content: "";
+      width: 300px;}
+      .button-div button  {
+        z-index: 1;
+      }
+
+.age-result-wrapper .age-result-list {
+  margin-top: 0.5rem;
+  font-size: 2.5rem;
+}
+}
